@@ -1,0 +1,63 @@
+messages:
+  command-usage:
+    message:
+      - "&8 "
+      - "&6&l  $plugin-name$ &a&oby r0astPiGGy"
+      - "&8 "
+      - "&f&lКоманды&8:"
+      - "&8★ &7/%label% &6reload &8(Перезагрузить плагин)"
+      - "&7 "
+  not-enough-perms:
+    message: "&cУ вас отсутствует право %permission%"
+    sound-prefab: fail
+  not-enough-args:
+    message: "&cВы ввели недостаточно аргументов"
+    sound-prefab: fail
+  only-player:
+    message: "&cЭту команду может выполнять только игрок."
+    sound-prefab: fail
+  reloading:
+    message: "&eПлагин перезагружается..."
+    sound-prefab: egg
+  reloaded:
+    message: "&aПлагин перезагружен!"
+    sound-prefab: success
+
+placeholders:
+  plugin-name: "&6&lEnchanted&e&lItems"
+  prefix: "&6&lEnchanted&e&lItems &8&l> &a"
+  error: "&4Ошибка&8: &c"
+
+placeholder-bracket: "$"
+
+# Префабы звуков. Их можно использовать в любом сообщении,
+# указав sound-prefab: <id>
+sound-prefabs:
+  egg:
+    # Тип звука.
+    # Все звуки - https://helpch.at/docs/1.17/org/bukkit/Sound.html
+    sound: ENTITY_CHICKEN_EGG
+    # Громкость звука (Обычно 2.0 это максимум)
+    volume: 2.0
+    # Высота звука, 2.0 - максимум
+    pitch: 1.0
+  success:
+    sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 2.0
+    pitch: 2.0
+  fail:
+    sound: ENTITY_ITEM_BREAK
+    volume: 5.0
+    pitch: 2.0
+  pling:
+    sound: BLOCK_NOTE_BLOCK_PLING
+    volume: 5.0
+    pitch: 2.0
+  tick:
+    sound: BLOCK_STONE_BUTTON_CLICK_ON
+    volume: 5.0
+    pitch: 2.0
+  island-upgraded:
+    sound: UI_TOAST_CHALLENGE_COMPLETE
+    volume: 10.0
+    pitch: 1.0
